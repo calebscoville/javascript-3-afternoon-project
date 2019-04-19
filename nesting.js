@@ -51,7 +51,17 @@ var employees = [
 */
 
 function employeeUpdater() {
-  
+  for(let i = 0; i < employees.length; i++) {
+    for(let key in employees[i]){
+      if(employees[i][key] === "Theo") {
+        delete employees[i]
+        i--
+      } else if(employees[i][key] === "Lorie") {
+        employees[i].department = "HR"
+      } 
+    }
+  }
+  return employees
 }
 
 
