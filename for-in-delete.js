@@ -40,7 +40,11 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  var addStr = ""
+  for(let key in obj) {
+addStr += obj[key]
+  }
+  return addStr
 }
 
 
@@ -53,8 +57,11 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10 ( obj ) {
 
+  function 
+
+}
 
 
 ////////// PROBLEM 3 //////////
