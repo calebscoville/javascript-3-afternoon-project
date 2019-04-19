@@ -59,8 +59,12 @@ addStr += obj[key]
 
 function greaterThan10 ( obj ) {
 
-  function 
-
+  for(let key in obj) {
+    if(obj[key] > 10){
+      obj[key] = 0
+    }
+  }
+return obj
 }
 
 
